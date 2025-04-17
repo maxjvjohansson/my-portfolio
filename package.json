@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@sanity/vision": "3.85.1",
     "next": "15.3.0",
     "next-sanity": "^9.10.2",
     "react": "^19.1.0",
@@ -21,6 +22,7 @@
     "@tailwindcss/postcss": "^4",
     "eslint": "^9",
     "eslint-config-next": "15.3.0",
-    "tailwindcss": "^4"
+    "tailwindcss": "^4",
+    "@sanity/vision": "3.85.1"
   }
 }
