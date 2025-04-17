@@ -9,12 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@sanity/vision": "^2.2.6",
     "next": "15.3.0",
-    "next-sanity": "^0.8.5",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "sanity": "^2.36.6"
+    "next-sanity": "^9.10.2",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "sanity": "^3.85.1",
+    "styled-components": "^6.1.17"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
