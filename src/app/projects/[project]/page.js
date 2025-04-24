@@ -25,6 +25,7 @@ export default async function ProjectPage({ params }) {
           priority
         />
       </Link>
+      <p>{project.description}</p>
       <Link
         className="project-link"
         href={project.project}
@@ -41,6 +42,13 @@ export default async function ProjectPage({ params }) {
       >
         {project.github}
       </Link>
+      <div className="skills">
+        {project.skills.map((skill, index) => (
+          <div key={index} className="skill-item">
+            <p>{skill.title}</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

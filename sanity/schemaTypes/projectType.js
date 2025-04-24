@@ -41,5 +41,11 @@ export const projectType = defineType({
       title: "Github Repository",
       type: "url",
     }),
+    {
+      name: "skills",
+      title: "Skills Used",
+      type: "array",
+      of: [{ type: "reference", to: [{ type: "skills" }] }],
+    },
   ],
 });

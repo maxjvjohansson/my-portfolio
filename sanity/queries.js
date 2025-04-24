@@ -24,7 +24,11 @@ export async function getProject(slug) {
       "image": image.asset->url,
 			description,
       project,
-      github
+      github,
+      skills[]->{
+        title,
+        "icon": icon.asset->url
+      }
     }`,
     { slug }
   );
