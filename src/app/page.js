@@ -10,19 +10,20 @@ export default async function Home() {
       {projects.map((project) => (
         <div className="project-card" key={project._id}>
           <h2 className="project-title">{project.title}</h2>
-          <Image
-            src={project.image}
-            alt={project.title}
-            width={2880}
-            height={2048}
-            style={{ width: "20rem", height: "auto" }}
-            priority
-          />
-          <Link className="project-link" href={project.project}>
-            {project.project}
-          </Link>
-          <Link className="project-link" href={project.github}>
-            {project.github}
+          <Link
+            href={`/projects/${project.slug}`}
+            key={project._id}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              src={project.image}
+              alt={project.title}
+              width={2880}
+              height={2048}
+              style={{ width: "20rem", height: "auto" }}
+              priority
+            />
           </Link>
         </div>
       ))}
