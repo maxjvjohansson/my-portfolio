@@ -10,12 +10,7 @@ export default async function Home() {
       {projects.map((project) => (
         <div className="project-card" key={project._id}>
           <h2 className="project-title">{project.title}</h2>
-          <Link
-            href={`/projects/${project.slug}`}
-            key={project._id}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <Link href={`/projects/${project.slug}`} key={project._id}>
             <Image
               src={project.image}
               alt={project.title}
